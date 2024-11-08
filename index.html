@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VALORANT AGENT RANDOMIZER</title>
   
-  <!-- "Rajdhani" desde Google Fonts -->
+  <!-- Fuente "Rajdhani" desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/styles.css">
@@ -19,10 +19,50 @@
     <section>
       <p>Entra ya y conoce qué agente deberías usar en la próxima partida con solo dar clic, sabrás qué agente es el recomendado</p>
       <button onclick="mostrarMensaje()">Haz clic aquí</button> 
+      <p id="resultado"></p>
+      <img id="agenteImagen" src="" alt="Imagen del agente" style="display: none; max-width: 100%;">
     </section>
   </main>
   <footer>
     <p>&copy; 2024 - VictorAburtoDiaz</p>
   </footer>
+
+  <script>
+const agentes = {
+  "Astra": "images/Astra.jpg",
+  "Breach": "images/Breach.jpg",
+  "Brimstone": "images/Brimstone.jpg",
+  "Chamber": "images/Chamber.jpg",
+  "Cypher": "images/Cypher.jpg",
+  "Fade": "images/Fade.jpg",
+  "Harbor": "images/Harbor.jpg",
+  "Jett": "images/Jett.jpg",
+  "KAY/O": "images/Kayo.jpg",
+  "Killjoy": "images/Killjoy.jpg",
+  "Neon": "images/Neon.jpg",
+  "Omen": "images/Omen.jpg",
+  "Phoenix": "images/Phoenix.jpg",
+  "Raze": "images/Raze.jpg",
+  "Reyna": "images/Reyna.jpg",
+  "Sage": "images/Sage.jpg",
+  "Skye": "images/Skye.jpg",
+  "Sova": "images/Sova.jpg",
+  "Viper": "images/Viper.jpg",
+  "Iso": "images/Iso.jpg",
+  "Clove": "images/Clove.jpg",
+  "Vyse": "images/Vyse.jpg",
+  "Yoru": "images/Yoru.jpg"
+};
+
+    function mostrarMensaje() {
+      const nombresAgentes = Object.keys(agentes);
+      const agenteSeleccionado = nombresAgentes[Math.floor(Math.random() * nombresAgentes.length)];
+      document.getElementById("resultado").innerText = "El agente recomendado es: " + agenteSeleccionado;
+      
+      const imagenElemento = document.getElementById("agenteImagen");
+      imagenElemento.src = agentes[agenteSeleccionado];
+      imagenElemento.style.display = "block"; // Muestra la imagen
+    }
+  </script>
 </body>
 </html>
