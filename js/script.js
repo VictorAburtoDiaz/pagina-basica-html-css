@@ -16,17 +16,29 @@ const agentes = {
     "imagen": "images/Chamber.jpg",
     "audio": "audio/chamber.mp3"
   },
+  "Clove":{"imagen":"images/Clove.jpg",
+    "audio": "audio/clove.mp3"
+  },
   "Cypher": {
     "imagen": "images/Cypher.jpg",
     "audio": "audio/cypher.mp3"
+  },
+  "Deadlock":{"imagen": "images/Deadlock.jpg",
+    "audio": "audio/deadlock.mp3"
   },
   "Fade": {
     "imagen": "images/Fade.jpg",
     "audio": "audio/fade.mp3"
   },
+  "Gekko": {"imagen": "images/Gekko.jpg",
+    "audio": "audio/gekko.mp3"
+  },
   "Harbor": {
     "imagen": "images/Harbor.jpg",
     "audio": "audio/harbor.mp3"
+  },
+  "Iso": { "imagen": "images/Iso.jpg",
+    "audio": "audio/iso.mp3"
   },
   "Jett": {
     "imagen": "images/Jett.jpg",
@@ -75,6 +87,9 @@ const agentes = {
   "Viper": {
     "imagen": "images/Viper.jpg",
     "audio": "audio/viper.mp3"
+  },
+  "Vyse": {"imagen": "images/Vyse.jpg",
+    "audio": "audio/vyse.mp3"
   },
   "Yoru": {
     "imagen": "images/Yoru.jpg",
